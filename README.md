@@ -4,7 +4,7 @@
 
 * ```cd /Users/rtanglao/Dropbox/GIT/rt-animated-gifs/2016-10-10```
 * ```ls -1 *.png > 1-31jan2016pngs.txt```
-* oops twitter can't handle 1023x683 gifs, it can only handle 1024x512 wide therefore:
+* oops twitter can't handle 1023x683 gifs, it can only handle 1024x512 wide therefore use ```-scale 1024x512```:
     * ```convert -loop 50 -delay 20 -scale 1024x512 @1-31jan2016pngs.txt 1024x512-imagemagick-01-31January2016-24squares-avgç-colour-per-hour.gif```
 
 ### Output
