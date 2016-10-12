@@ -1,5 +1,14 @@
 # Animated GIFs
 
+## October 12, 2016
+
+* ```mkdir 2016-10-12```
+* ```cd !$```
+* ```convert -loop 50 -delay 20  @3000photos.txt 3000firstphotos-01-31January2016-avg-colour-per-hour.gif```
+* OOOPS that makes 1024x768 we want 2:1 so use the ```-scale``` option
+    * ```convert -loop 50 -delay 20  -scale 1024x512 @3000photos.txt 1024x512-scaled-3000firstphotos-01-31January2016-avg-colour-per-hour.gif```
+
+
 ## October 11, 2016
 
 * ```cd /Users/rtanglao/Dropbox/GIT/rt-animated-gifs/2016-10-10```
