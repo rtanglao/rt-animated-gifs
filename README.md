@@ -8,6 +8,9 @@
 * OOOPS that makes 1024x768 we want 2:1 so use the ```-scale``` option
     * ```convert -loop 50 -delay 20  -scale 1024x512 @3000photos.txt 1024x512-scaled-3000firstphotos-01-31January2016-avg-colour-per-hour.gif```
 
+### Output
+
+![twitter size 01-31January2016-1st3000photos-avg-colour-per-hour](https://c2.staticflickr.com/8/7771/29661313004_98ffe1a6df_o_d.gif "twitter size 01-31January2016-1st3000photos-avg-colour-per-hour")
 
 ## October 11, 2016
 
