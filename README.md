@@ -1,5 +1,13 @@
 # Animated GIFs
 
+## October 13, 2016
+
+* ```mkdir 2016-10-13```
+* ```cd !$```
+* ```cp ~/Dropbox/PUBLIC/ROLAND_VANCOUVER_FLICKR/animatedHD.gif flickr-roland-2004-2012-animatedHD.gif``` # this file can be found at https://dl.dropboxusercontent.com/u/361757/ROLAND_VANCOUVER_FLICKR/animatedHD.gif in roland's Dropbox public folder
+* ```gm convert -scale 1024x512 flickr-roland-2004-2012-animatedHD.gif 1024x512-flickr-roland-2004-2012-animatedHD.gif ``` # result is 45 MB, still too big!
+* ```gm convert 1024x512-flickr-roland-2004-2012-animatedHD.gif -resize 50% 50percent-1024x512-flickr-roland-2004-2012-animatedHD.gif```
+
 ## October 12, 2016
 
 * ```mkdir 2016-10-12```
