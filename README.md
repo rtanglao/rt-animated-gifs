@@ -8,6 +8,9 @@
 * ```gm convert -scale 1024x512 flickr-roland-2004-2012-animatedHD.gif 1024x512-flickr-roland-2004-2012-animatedHD.gif ``` # result is 45 MB, still too big!
 * ```gm convert 1024x512-flickr-roland-2004-2012-animatedHD.gif -resize 50% 50percent-1024x512-flickr-roland-2004-2012-animatedHD.gif```
 
+### Output
+![roland flickr 2004-2012 75x75 thumbnails arranged chronologically into hdframes](https://c1.staticflickr.com/9/8630/30312866925_431b8e7926_o_d.gif)
+
 ## October 12, 2016
 
 * ```mkdir 2016-10-12```
