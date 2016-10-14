@@ -1,5 +1,19 @@
 # Animated GIFs
 
+## October 14, 2016
+
+* ```mkdir 2016-10-14```
+* ```cd !$```
+* ```cp ~/Dropbox/GIT/rtgram/THUMBNAIL_150x150/BARCODE-1px-150px/2015_DAILY_BARCODES/*slices.png .```
+* ```ls -1 *.png >2015-barcode-slices.txt```
+* ```gm convert -loop 50 -delay 20 -scale 1024x512 @2015-barcode-slices.txt 2015-barcode.gif``` #dang 21 MB
+* ```gm convert -resize 50% 2015-barcode.gif 50percent-2015-barcode.gif```
+
+### Output
+
+![instagram 2015 vancouver barcode](https://c1.staticflickr.com/9/8130/29696652433_d3ed551ca9_o_d.gif
+ "instagram 2015 vancouver barcode")
+
 ## October 13, 2016
 
 * ```mkdir 2016-10-13```
