@@ -10,8 +10,6 @@
 
 ### Output
 
-![roland flickr 2004-2012 75x75 thumbnails arranged chronologically into hdframes])
-
 ![twitter size flickr 2004-2012 thumbs arranged into hd frames](https://c1.staticflickr.com/9/8630/30312866925_431b8e7926_o_d.gif "twitter size flickr 2004-2012 thumbs arranged into hd frames")
 
 ## October 12, 2016
