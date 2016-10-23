@@ -1,5 +1,13 @@
 # Animated GIFs
 
+## October 23, 2016
+
+* ```mkdir 2016-10-23```
+* ```cd !$```
+* ```cp /Users/rtanglao/Dropbox/GIT/2016-r-rtgram/JANUARY2016/colourname*.png .```
+* ```ls -1 *.png >2016-january-piecharts.txt```
+* ```gm convert -loop 50 -delay 20 -scale 1024x512 @2016-january-piecharts.txt 2016-january-instagram-vancouver-average-colour-piecharts``` 
+
 ## October 14, 2016
 
 * ```mkdir 2016-10-14```
