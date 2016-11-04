@@ -8,7 +8,9 @@ WIP
 * ```cd !$```
 * ```./printAverageColourHexValueFromDirectory.rb /Users/rtanglao/Dropbox/Public/CCC/DATASETS/09April2012-ROLAND-103K-75x75-FLICKR-PHOTOS/75X75/FILES_SYM_LINKED_SEQUENTIALLY/ > flickr-roland-2004-12-avgcolour.txt ``` # convert 2004-2012 roland flickr thumbnails to average colour using scaling
 * ```xxd -r -p flickr-roland-2004-12-avgcolour.txt flickr-roland-2004-12-avgcolour.raw``` #convert to binary file
-* open in photoshop 3 channels 8 bits per channel and then save as flickr-roland-2004-12-avgcolour.png
+* open in photoshop 3 channels 8 bits per channel and then save as flickr-roland-2004-12-avgcolour.png, output:<br />
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/roland/30685511691/in/datetaken-ff/" title="flickr-roland-2004-12-avgcolour"><img src="https://c4.staticflickr.com/6/5823/30685511691_c1c6bc6138.jpg" width="372" height="271" alt="flickr-roland-2004-12-avgcolour"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 * next steps: read the image 1250 pixels at a time and use those pixels to make 86 50px x 25 px images and then make an animated gif
 
 ## October 23, 2016
