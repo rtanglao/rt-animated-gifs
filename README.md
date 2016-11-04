@@ -1,5 +1,13 @@
 # Animated GIFs
 
+## November 4, 2016
+
+(continuing from the end of November 3)
+
+* ```split -l 1024 flickr-roland-2004-12-avgcolour.txt 1024line-chunks-flickr-roland-2004-12-avgcolour-```
+    * which creates: 1024line-chunks-flickr-roland-2004-12-avgcolour-aa to 1024line-chunks-flickr-roland-2004-12-avgcolour-du each 1024 lines long except the last one which is du
+* somehow have to create a 1024x512 image ouot of 1024line-chunks-flickr-roland-2004-12-avgcolour-aa ... 1024line-chunks-flickr-roland-2004-12-avgcolour-dt
+
 ## November 3, 2016
 
 WIP
