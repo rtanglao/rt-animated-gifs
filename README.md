@@ -6,7 +6,9 @@ WIP
 
 * ```mkdir 2016-11-03```
 * ```cd !$```
-* ```./printAverageColourHexValueFromDirectory.rb /Users/rtanglao/Dropbox/Public/CCC/DATASETS/09April2012-ROLAND-103K-75x75-FLICKR-PHOTOS/75X75/FILES_SYM_LINKED_SEQUENTIALLY/ > flickr-roland-2004-12-avgcolour.rgb ``` # convert 2004-2012 roland flickr thumbnails to average colour using scaling
+* ```./printAverageColourHexValueFromDirectory.rb /Users/rtanglao/Dropbox/Public/CCC/DATASETS/09April2012-ROLAND-103K-75x75-FLICKR-PHOTOS/75X75/FILES_SYM_LINKED_SEQUENTIALLY/ > flickr-roland-2004-12-avgcolour.txt ``` # convert 2004-2012 roland flickr thumbnails to average colour using scaling
+* ```xxd -r -p flickr-roland-2004-12-avgcolour.txt flickr-roland-2004-12-avgcolour.raw``` #convert to binary file
+* open in photoshop 3 channels 8 bits per channel
 
 ## October 23, 2016
 
