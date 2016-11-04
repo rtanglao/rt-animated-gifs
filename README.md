@@ -7,6 +7,8 @@
 * ```split -l 1024 flickr-roland-2004-12-avgcolour.txt 1024line-chunks-flickr-roland-2004-12-avgcolour-```
     * which creates: 1024line-chunks-flickr-roland-2004-12-avgcolour-aa to 1024line-chunks-flickr-roland-2004-12-avgcolour-du each 1024 lines long except the last one which is du
 * somehow have to create a 1024x512 image ouot of 1024line-chunks-flickr-roland-2004-12-avgcolour-aa ... 1024line-chunks-flickr-roland-2004-12-avgcolour-dt
+* even better: ```brew install coreutils```
+* ```gsplit -a3 -l 1024 --numeric-suffixes=1  flickr-roland-2004-12-avgcolour.txt 1024line-chunks-flickr-roland-2004-12-avgcolour-``` # -a3 means 3 digits, -l 1024 means 1024 line chunks, --numeric-suffixes=1 means start at 1 instead of 0
 
 ## November 3, 2016
 
