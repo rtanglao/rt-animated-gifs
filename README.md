@@ -1,5 +1,15 @@
 # Animated GIFs
 
+## November 5, 2016
+
+(continuing from the end of November 4)
+
+* ```mkdir 1024x512```
+* ```parallel "for i in {1..512};do cat {} >>1024x512/{.}.txt; done" ::: 1024line-chunks-flickr-roland-2004-12*```
+* ```cd 1024x512```
+* ```parallel "xxd -r -p {} {.}.rgb" ::: 1024line-chunks-flickr-roland-2004-12-avgcolour-*.txt``` # make rgb binary files
+* ```parallel "gm convert -depth 8  -size 1024x512 {} {.}.png" ::: 1024line-chunks-flickr-roland-2004-12-avgcolour-*.rgb```
+
 ## November 4, 2016
 
 (continuing from the end of November 3)
