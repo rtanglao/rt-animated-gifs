@@ -9,6 +9,8 @@
 * ```cd 1024x512```
 * ```parallel "xxd -r -p {} {.}.rgb" ::: 1024line-chunks-flickr-roland-2004-12-avgcolour-*.txt``` # make rgb binary files
 * ```parallel "gm convert -depth 8  -size 1024x512 {} {.}.png" ::: 1024line-chunks-flickr-roland-2004-12-avgcolour-*.rgb```
+* ```gm convert -loop 50 -delay 20 *.png flickr2004-12-roland-avg-colour-barcode.gif``` #45MB too big for twitter
+* ```gm convert -loop 50 -delay 20 -scale 512x256 *.png 512x256-flickr2004-12-roland-avg-colour-barcode.gif```
 
 ## November 4, 2016
 
