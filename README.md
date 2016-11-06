@@ -11,6 +11,7 @@
 * ```parallel "gm convert -depth 8  -size 1024x512 {} {.}.png" ::: 1024line-chunks-flickr-roland-2004-12-avgcolour-*.rgb```
 * ```gm convert -loop 50 -delay 20 *.png flickr2004-12-roland-avg-colour-barcode.gif``` #45MB too big for twitter
 * ```gm convert -loop 50 -delay 20 -scale 512x256 *.png 512x256-flickr2004-12-roland-avg-colour-barcode.gif```
+* I attempted to document [the above creation of an animated gif from November 3-5, 2016 in a blog post](http://rolandtanglao.com/2016/11/05/p1-How-to-make-animated-gif-average-colour-barcode-from-lots-of-photos/)
 
 ## November 4, 2016
 
