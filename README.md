@@ -1,5 +1,27 @@
 # Animated GIFs
 
+## November 13, 2016
+
+### make animated circular graph
+
+* ```mkdir 2016-11-13; cd !$```
+* ```cp ../2016-11-03/flickr-roland-2004-12-avgcolour.txt .```
+* ```brew install gnu-sed``` #sed on linux
+* ```gsed -i '1s/^/colour\n/' flickr-roland-2004-12-avgcolour.txt```
+
+####  working counterclockwise code
+ 
+ ```R
+index = 0
+for(i in 1:nrow(colours360)) {
+  draw.radial.line(0,1,deg= index, center=c(3,2), col=strtoi(gsub("^#", '', colours360[i,]), 16), expand = TRUE)
+  Sys.sleep(1.0)
+  index = index + 1
+}
+```
+
+
+
 ## November 5, 2016
 
 (continuing from the end of November 4)
