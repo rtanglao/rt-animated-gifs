@@ -12,9 +12,10 @@
 ####  working counterclockwise code
  
  ```R
+plot(0, xlim=c(1,5), ylim=c(1,5), main="", xlab="", ylab="", type="n", axes=F)
 index = 0
 for(i in 1:nrow(colours360)) {
-  draw.radial.line(0,1,deg= index, center=c(3,2), col=strtoi(gsub("^#", '', colours360[i,]), 16), expand = TRUE)
+  draw.radial.line(0,1,deg= index, center=c(3,2), col= colours360[i,], expand = TRUE)
   Sys.sleep(1.0)
   index = index + 1
 }
