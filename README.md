@@ -21,6 +21,12 @@ for(i in 1:nrow(colours360)) {
 }
 ```
 
+### 2.0 testing on first 360
+
+* 1. ```mkdir test360; cd !$```
+* 2. ```head -361 ../flickr-roland-2004-12-avgcolour.txt  >first360-flickr-roland-2004-12-avgcolour.txt```
+* 3. ```Rscript ../make-radial-one-colour-image.R first360-flickr-roland-2004-12-avgcolour.txt```
+* 4.  * ```gm convert -loop 50 -delay 20 *.png first360-flickr-roland-2004-12-avgcolour.gif```
 
 
 ## November 5, 2016
