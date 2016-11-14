@@ -2,14 +2,14 @@
 
 ## November 13, 2016
 
-### make animated circular graph
+### 1.0 - make animated circular graph
 
-* ```mkdir 2016-11-13; cd !$```
-* ```cp ../2016-11-03/flickr-roland-2004-12-avgcolour.txt .```
-* ```brew install gnu-sed``` #sed on linux
-* ```gsed -i '1s/^/colour\n/' flickr-roland-2004-12-avgcolour.txt```
+* \1. ```mkdir 2016-11-13; cd !$```
+* \2. ```cp ../2016-11-03/flickr-roland-2004-12-avgcolour.txt .```
+* \3. ```brew install gnu-sed``` #sed on linux
+* \4. ```gsed -i '1s/^/colour\n/' flickr-rolandraw.radial.line(0,1,deg= index, center=c(3,2), col= colours360[i,], expand = TRUE)d-2004-12-avgcolour.txt```
 
-####  working counterclockwise code
+####  1.1 working counterclockwise code
  
  ```R
 plot(0, xlim=c(1,5), ylim=c(1,5), main="", xlab="", ylab="", type="n", axes=F)
