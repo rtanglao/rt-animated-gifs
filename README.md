@@ -29,6 +29,10 @@ for (row in 1:nrow(colours360)) {
 * 4. ```gm convert -loop 50 -delay 20 *.png first360-flickr-roland-2004-12-avgcolour.gif``` #won't fit on twitter
 * 5. ```gm convert -loop 50 -delay 20 -scale 512x512 *.png 512x512-first360-flickr-roland-2004-12-avgcolour.gif``` #fits on twitter
 
+#### 2.1 Twitter compatible Output
+
+![512x512-first360-images-average-colour-roland-flickr-2004](https://github.com/rtanglao/rt-animated-gifs/blob/master/2016-11-13/test360/first360-flickr-roland-2004-12-avgcolour.gif)
+
 
 ## November 5, 2016
 
