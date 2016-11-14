@@ -9,7 +9,7 @@
 * 3. ```brew install gnu-sed``` #sed on linux
 * 4. ```gsed -i '1s/^/colour\n/' flickr-roland-2004-12-avgcolour.txt```
 
-####  1.1 working counterclockwise code
+####  1.1 working counterclockwise code, 0 degrees = 3 o'clock
  
  ```R
 plot(0, xlim=c(1,5), ylim=c(1,5), main="", xlab="", ylab="", type="n", axes=F)
