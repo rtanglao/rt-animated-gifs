@@ -1,5 +1,11 @@
 # Animated GIFs
 
+## November 14, 2016
+
+* 1. ```mkdir 2016-11-14; cd !$```
+* 2.  ```cp /Users/rtanglao/Dropbox/GIT/rt-animated-gifs/2016-11-13/test360/*.png .```
+* 3. ```composite -compose bumpmap  0000002-first360-flickr-roland-2004-12-avgcolour.png 0000001-first360-flickr-roland-2004-12-avgcolour.png blended-0000001-2.png``` # i don't understand why i need bumpmap?!? because maybe my pngs aren't transparent or something?
+
 ## November 13, 2016
 
 ### 1.0 - make animated circular graph
