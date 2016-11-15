@@ -1,5 +1,16 @@
 # Animated GIFs
 
+## November 15, 2016
+
+* 1. ```mkdir 2016-11-15; cd !$```
+* 2. ```cp ../2016-11-14/000*.png .```
+* 3. the following doesn't work, 2 simply writes over 1:
+```convert 0000001-first360-flickr-roland-2004-12-avgcolour.png 0000002-first360-flickr-roland-2004-12-avgcolour.png -geometry +0+0 -composite 1-2.png```
+* 4. this works: 
+```convert 0000001-first360-flickr-roland-2004-12-avgcolour.png 0000002-first360-flickr-roland-2004-12-avgcolour.png -compose overlay -composite convert-overlay-1-2.png```
+* 5. and this works too:
+```convert convert-overlay-1-2.png 0000003-first360-flickr-roland-2004-12-avgcolour.png -compose overlay -composite convert-overlay-2-3.png```
+
 ## November 14, 2016
 
 * 1. ```mkdir 2016-11-14; cd !$```
