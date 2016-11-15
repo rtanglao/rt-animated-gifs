@@ -18,11 +18,11 @@ files_to_composite.each_with_index do |file, i|
   $stderr.printf("background file:%s\n", background_file)
 
   begin
-    background_img =  Magick::Image.read(background_file).first
-    $stderr.printf("background file read successfully\n")
-    overlay_img =  Magick::Image.read(overlay_file).first
+    src_img =  Magick::Image.read(overlay_file).first # overlay is src, background is destination
     $stderr.printf("overlay file read successfully\n")
-    composite_img = background_img.composite(overlay_img, 0, 0, Magick::BumpmapCompositeOp)
+    dest_img =  Magick::Image.read(background_file).first
+    $stderr.printf("background file read successfully\n")
+    composite_img = dest_img.composite(src_img, 0, 0, Magick::SubtractCompositeOp) #SaturateCompositeOp - is cool, watercolourish; 
   rescue Magick::ImageMagickError
     next
   end
