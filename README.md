@@ -11,9 +11,17 @@
 * 5. and this works too:
 ```convert convert-overlay-1-2.png 0000003-first360-flickr-roland-2004-12-avgcolour.png -compose overlay -composite convert-overlay-2-3.png```
 * 6. actually none of the above works after the 4th image because the PNGs aren't transparent?!?, therefore added 
-``` png(file=filename, width=1024, height=1024, res=72, bg = "transparent")``` to make-readial-one-colour-image.R
+``` png(file=filename, width=1024, height=1024, res=72, bg = "transparent")``` to make-radial-one-colour-image.R
 * 7. ```cp ../2016-11-03/flickr-roland-2004-12-avgcolour.txt .; head -361 flickr-roland-2004-12-avgcolour.txt  >first360-flickr-roland-2004-12-avgcolour.txt```
 * 8. ```Rscript ../2016-11-13/make-radial-one-colour-image.R first360-flickr-roland-2004-12-avgcolour.txt```
+* 9. ```convert 0000001-first360-flickr-roland-2004-12-avgcolour.png 0000002-first360-flickr-roland-2004-12-avgcolour.png  -composite 1-2.png```
+* 10.  ```convert 1-2.png 0000003-first360-flickr-roland-2004-12-avgcolour.png  -composite 1-2-3.png```
+* 11. ```convert 1-2-3.png 0000004-first360-flickr-roland-2004-12-avgcolour.png  -composite 1-2-3-4.png```
+* 12. ```convert 1-2-3-4.png 0000005-first360-flickr-roland-2004-12-avgcolour.png  -composite 1-2-3-4-5.png```
+* 13. ```ls -1 000*.png >roland-1st360-flickr-average-colour.txt```
+* 14 ```./convert-create-composite-gifs-from-file-list.rb roland-1st360-flickr-average-colour.txt```
+* 15 ```gm convert -loop 50 -delay 10 -scale 256x256 convert-composite*.png convert-composite256-first360-flickr-roland-2004-12-avgcolour.gif```
+
 
 ## November 14, 2016
 
