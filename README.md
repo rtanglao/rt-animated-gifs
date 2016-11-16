@@ -10,6 +10,10 @@
 ```convert 0000001-first360-flickr-roland-2004-12-avgcolour.png 0000002-first360-flickr-roland-2004-12-avgcolour.png -compose overlay -composite convert-overlay-1-2.png```
 * 5. and this works too:
 ```convert convert-overlay-1-2.png 0000003-first360-flickr-roland-2004-12-avgcolour.png -compose overlay -composite convert-overlay-2-3.png```
+* 6. actually none of the above works after the 4th image because the PNGs aren't transparent?!?, therefore added 
+``` png(file=filename, width=1024, height=1024, res=72, bg = "transparent")``` to make-readial-one-colour-image.R
+* 7. ```cp ../2016-11-03/flickr-roland-2004-12-avgcolour.txt .; head -361 flickr-roland-2004-12-avgcolour.txt  >first360-flickr-roland-2004-12-avgcolour.txt```
+* 8. ```Rscript ../2016-11-13/make-radial-one-colour-image.R first360-flickr-roland-2004-12-avgcolour.txt```
 
 ## November 14, 2016
 
@@ -51,8 +55,6 @@ for (row in 1:nrow(colours360)) {
 #### 2.1 Twitter compatible Output
 
 ![512x512-first360-images-average-colour-roland-flickr-2004](https://github.com/rtanglao/rt-animated-gifs/blob/master/2016-11-13/test360/first360-flickr-roland-2004-12-avgcolour.gif)
-
-
 ## November 5, 2016
 
 (continuing from the end of November 4)
