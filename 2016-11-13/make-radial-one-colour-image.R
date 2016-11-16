@@ -28,7 +28,7 @@ main <- function() {
     degree_index = 90
     for(row in 1:nrow(colours)) {
         filename = sprintf("%7.7d-%s", row, gsub("txt", "png", basename(args[1])))
-        png(file=filename, width=1024, height=1024, res=72)
+        png(file=filename, width=1024, height=1024, res=72, bg = "transparent")
         plot(0, xlim=c(1,5), ylim=c(1,5), main="", xlab="", ylab="", type="n", axes=F)
         draw.radial.line(0,2,deg= degree_index, center=c(3,3), col= colours[row,], expand = FALSE, lwd = 30)
         dev.off()
