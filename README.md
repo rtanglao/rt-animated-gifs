@@ -3,6 +3,8 @@
 ## November 27, 2016
 * 1. ```mkdir 2016-11-27; cd !$```
 * 2. ```cp ../2016-11-03/flickr-roland-2004-12-avgcolour.txt .```
+* 3. ```Rscript ./make-radial-10px-one-colour-image.R flickr-roland-2004-12-avgcolour.txt```
+
 
 ## November 15, 2016
 
