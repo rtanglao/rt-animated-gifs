@@ -4,7 +4,16 @@
 * 1. ```mkdir 2016-11-27; cd !$```
 * 2. ```cp ../2016-11-03/flickr-roland-2004-12-avgcolour.txt .```
 * 3. ```Rscript ./make-radial-10px-one-colour-image.R flickr-roland-2004-12-avgcolour.txt```
-
+* 4. ```find . -name '0*.png' | head -90000 > 1st90K-pngs.txt```
+* 5. ```gm montage -verbose -adjoin -tile 30x30 +frame +shadow +label -adjoin -geometry '256x256+0+0<' @1st90K-pngs.txt flickr-2004-2012-90000-arcs-average-colour.png```  # unable to extend cache
+* 6. ```mkdir TRIMMED```
+* 7. ```find . -maxdepth 1 -name '00*.png' -print0 | xargs -0 -I file gm convert -trim file TRIMMED/file```
+* 8. ```cd TRIMMED```
+* 9. ```find . -name '0*.png' -print0 | xargs -0 -I file identify -format "%[fx:w]x%[fx:h]\n" file > arc-sizes.txt`` #gm identify doesn't work
+* 10. ```sort -f -t x sorted.txt >sorted-f-t-x.txt```
+* 11. ```uniq sorted-f-t-x.txt >uniq-sorted-f-t-x.txt``` # 88x66
+* 12. ```find . -name '0*.png' | head -90000 > 1st90K-pngs.txt```
+* 13. ```gm montage -verbose -adjoin -tile 30x30 +frame +shadow +label -adjoin -geometry '88x88+0+0<' @1st90K-pngs.txt 88x88-flickr-2004-2012-90000-arcs-average-colour.png```
 
 ## November 15, 2016
 
