@@ -9,9 +9,9 @@
 * 6. ```mkdir TRIMMED```
 * 7. ```find . -maxdepth 1 -name '00*.png' -print0 | xargs -0 -I file gm convert -trim file TRIMMED/file```
 * 8. ```cd TRIMMED```
-* 9. ```find . -name '0*.png' -print0 | xargs -0 -I file identify -format "%[fx:w]x%[fx:h]\n" file > arc-sizes.txt`` #gm identify doesn't work, shoud try %03w to force zero padding https://www.imagemagick.org/Usage/files/
+* 9. ```find . -name '0*.png' -print0 | xargs -0 -I file identify -format "%w %h\n"  file > arc-sizes.txt``` #gm identify doesn't work, %03w to force zero padding doesn't seem to work https://www.imagemagick.org/Usage/files/
 * 10. ```sort -f -t x sorted.txt >sorted-f-t-x.txt```
-* 11. ```uniq sorted-f-t-x.txt >uniq-sorted-f-t-x.txt``` # 88x66 is the largets
+* 11. ```uniq sorted-f-t-x.txt >uniq-sorted-f-t-x.txt``` # 88x66 is the largest
 * 12. ```find . -name '0*.png' | head -90000 > 1st90K-pngs.txt```
 * 13. ```gm montage -verbose -adjoin -tile 30x30 +frame +shadow +label -adjoin -geometry '88x88+0+0<' @1st90K-pngs.txt 88x88-flickr-2004-2012-90000-arcs-average-colour.png```
 
