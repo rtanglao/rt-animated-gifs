@@ -9,7 +9,7 @@
 * 6. ```mkdir TRIMMED```
 * 7. ```find . -maxdepth 1 -name '00*.png' -print0 | xargs -0 -I file gm convert -trim file TRIMMED/file```
 * 8. ```cd TRIMMED```
-* 9. ```find . -name '0*.png' -print0 | xargs -0 -I file identify -format "%w %h\n"  file > arc-sizes.txt``` #gm identify doesn't work, %03w to force zero padding doesn't seem to work https://www.imagemagick.org/Usage/files/
+* 9. ```find . -name '0*.png' -print0 | xargs -0 -I file identify -format "%w %h\n"  file > arc-sizes.txt``` #gm identify doesn't work, %03w to force zero padding doesn't seem to work https://www.imagemagick.org/Usage/files/ http://www.imagemagick.org/Usage/files/#save_escapes
 * 10. ```sort -f -t x sorted.txt >sorted-f-t-x.txt```
 * 11. ```uniq sorted-f-t-x.txt >uniq-sorted-f-t-x.txt``` # 88x66 is the largest
 * 12. ```find . -name '0*.png' | head -90000 > 1st90K-pngs.txt```
