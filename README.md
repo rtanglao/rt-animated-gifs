@@ -14,6 +14,7 @@
 * 11. ```uniq sorted-f-t-x.txt >uniq-sorted-f-t-x.txt``` # 88x66 is the largest
 * 12. ```find . -name '0*.png' | head -90000 > 1st90K-pngs.txt```
 * 13. ```gm montage -verbose -adjoin -tile 30x30 +frame +shadow +label -adjoin -geometry '88x88+0+0<' @1st90K-pngs.txt 88x88-flickr-2004-2012-90000-arcs-average-colour.png```
+* 14. ```gm convert -loop 50 -delay 10 -scale 88x88 @1st90K-pngs.txt 88x88-1st90k-pngs.gif```
 
 ### 28November2016Output
 
