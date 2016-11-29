@@ -1,6 +1,15 @@
 # Animated GIFs
 
+## November 29, 2016
+
+* 1. ```convert ../0000001-flickr-roland-2004-12-avgcolour.png -gravity center -background "transparent" -extent 88x88 0000001-flickr-roland-2004-12-avgcolour.png``` works
+* 2. ```parallel convert {}  -gravity center -background "transparent" -extent 88x88 {.}.png ::: ../0*.png``` # doesn't work
+* 3. ```find .. -name '0*.png' -print > flickr2004-12-avg-colour-radial-arcs.txt```
+* 4. ```parallel convert {}  -gravity center -background "transparent" -extent 88x88 {.}.png :::: - flickr2004-12-avg-colour-radial-arcs.txt```
+* 5. ```parallel convert {} -gravity center -background "transparent" -extent 88x88 PNG24:{/.}.png :::: flickr2004-12-avg-colour-radial-arcs.txt```
+
 ## November 27, 2016
+
 * 1. ```mkdir 2016-11-27; cd !$```
 * 2. ```cp ../2016-11-03/flickr-roland-2004-12-avgcolour.txt .```
 * 3. ```Rscript ./make-radial-10px-one-colour-image.R flickr-roland-2004-12-avgcolour.txt```
@@ -14,7 +23,9 @@
 * 11. ```uniq sorted-f-t-x.txt >uniq-sorted-f-t-x.txt``` # 88x66 is the largest
 * 12. ```find . -name '0*.png' | head -90000 > 1st90K-pngs.txt```
 * 13. ```gm montage -verbose -adjoin -tile 30x30 +frame +shadow +label -adjoin -geometry '88x88+0+0<' @1st90K-pngs.txt 88x88-flickr-2004-2012-90000-arcs-average-colour.png```
-* 14. ```gm convert -loop 50 -delay 10 -scale 88x88 @1st90K-pngs.txt 88x88-1st90k-pngs.gif```
+* 14. ```gm convert -loop 50 -delay 10 -scale 88x88 @1st90K-pngs.txt 88x88-1st90k-pngs.gif``` #didn't work
+* 15 ```gm convert -loop 50 -geometry '88x88<' @1st90K-pngs.txt geometry-88x88-1st90kpngs.gif``` #not 88x88
+* 16. ```gm convert -loop 50 -geometry '88x88+0+0<' @1st90K-pngs.txt geometry-88x88-1st90kpngs.gif``` #didn't work not 88x88
 
 ### 28November2016Output
 
