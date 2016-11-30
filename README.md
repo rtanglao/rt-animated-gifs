@@ -7,6 +7,10 @@
 * 3. ```find .. -name '0*.png' -print > flickr2004-12-avg-colour-radial-arcs.txt```
 * 4. ```parallel convert {}  -gravity center -background "transparent" -extent 88x88 {.}.png :::: - flickr2004-12-avg-colour-radial-arcs.txt```
 * 5. ```parallel convert {} -gravity center -background "transparent" -extent 88x88 PNG24:{/.}.png :::: flickr2004-12-avg-colour-radial-arcs.txt```
+* 6. ```ls -1 > all-pngs.txt``` #remove non png files
+* 7. ```gm convert -loop 50 @all-pngs.txt 29nov201-6-2004-12-flickr88x88-1st90kpngs.gif```
+* 8. ```ls -1 | head -1002 >1st1000-pngs.txt```
+* 9. ```gm convert -delay 5 -loop 50 -delay-5-29nov2016-2004-12-flickr88x88-1st1000-pngs.gif``` #fun but pointless :-)
 
 ## November 27, 2016
 
